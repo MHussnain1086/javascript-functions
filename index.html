@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jsConverter</title>
+    <link rel="stylesheet" href="bootstrap-4.0.0\dist\css\bootstrap.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-md-5 col-sm-12">
+                <p style="font-size: 27px; color: green; padding-top: 30px;font-family: cursive;">For Hours into Seconds:<br/>
+                  <input placeholder="Enter hours" type="number" id="seconds" size="300px" required><br/>
+                  <p id="r1" style="font-size: 20px;font-family: cursive;
+                  color: darkred;"></p><br/>
+                  <button style="margin-top: -50px;" id="b1" onclick="intoSeconds()" type="button" class="btn btn-success">Convert</button></p>
+            </div>
+            <div class="col-md-5 col-sm-12">
+                <p style="font-size: 27px; color: green; padding-top: 30px;font-family: cursive;">For Age into Days:<br/>
+                    <input placeholder="Enter Your Age" type="number" id="year" size="300px" required><br/>
+                    <p id="r2" style="font-size: 20px;font-family: cursive;
+                    color: darkred;"></p><br/>
+                    <button style="margin-top: -50px;" id="b2" onclick="calcAge()" type="button" class="btn btn-success">Convert</button></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-md-5 col-sm-12">
+                <p style="font-size: 27px; color: green; padding-top: 30px;font-family: cursive;">For Inverting the Numbers:<br/>
+                    <input placeholder="Enter the Array 1 by 1" type=text id="arry" size="20px" required><br/>
+                    <p id="r3" style="font-size: 20px;font-family: cursive;
+                    color: darkred;"></p><br/>
+                    <button style="margin-top: -50px;" id="b3" onclick="invertArry()" type="button" class="btn btn-success">Convert</button>
+            </div>
+            <div class="col-md-5 col-sm-12">
+                <p style="font-size: 27px; color: green; padding-top: 30px;font-family: cursive;"> Comparing Length of Strings:<br/>
+                    <input placeholder="First String" type=text id="S1" size="20px" required><br/>
+                    
+                    <input placeholder="2nd String" type=text id="S2" size="20px" required><br/>
+                    <p id="r4" style="font-size: 20px;font-family: cursive;
+                    color: darkred;"></p><br/>
+                    <button style="margin-top: -50px;" id="b4" onclick="compare()" type="button" class="btn btn-success">Convert</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-md-5 col-sm-12">
+                <p style="font-size: 27px; color: green; padding-top: 30px;font-family: cursive;">For Converting to Strings:<br/>
+                    <input placeholder="Enter a Integer Or String" type=text id="con" size="20px" required><br/>
+                    <p id="r5" style="font-size: 20px;font-family: cursive;
+                    color: darkred;"></p><br/>
+                    <button style="margin-top: -50px;" id="b5" onclick="converter()" type="button" class="btn btn-success">Convert</button>
+            </div>
+            <div class="col-md-5 col-sm-12">
+                <p style="font-size: 27px; color: green; padding-top: 30px;font-family: cursive;">For Checking the Leap Year:<br/>
+                    <input type=number id="leap" size="20px" placeholder="Enter a year" required><br/>
+                    <p id="r6" style="font-size: 20px;font-family: cursive;
+                    color: darkred;"></p><br/>
+                    <button style="margin-top: -50px;" id="b6" onclick="leap()" type="button" class="btn btn-success">Convert</button>
+        </div>
+    </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-12">
+             <center>   <p style="font-size: 27px; color: green; padding-top: 30px;font-family: cursive;">For Checking Days before Ending Corona:<br/>
+                    <input type=number id="coro" size="20px" placeholder="Recoverd Cases" required><br/>
+                    <input type=number id="cor" size="20px" placeholder="New Cases" required><br/>
+                    <input type=number id="co" size="20px" placeholder="Active Cases" required><br/>
+                    <p id="r7" style="font-size: 20px;font-family: cursive;
+                    color: darkred;"></p><br/>
+                    <button style="margin-top: -50px;" id="b7" onclick="corona()" type="button" class="btn btn-success">Convert</button></center>
+                
+            </div>
+        </div>
+    </div>
+    <script src="script.js" ></script>
+</body>
+</html>
